@@ -1,5 +1,5 @@
 {
-  "name": "masterchefV2",
+  "name": "masterchef-graph",
   "private": true,
   "license": "MIT",
   "version": "1.0.0",
@@ -7,6 +7,7 @@
   "scripts": {
     "codegen": "graph codegen subgraph.yaml",
     "build": "graph build subgraph.yaml",
+    "deploy": "yarn graph deploy 0xBriz/farm-graph --product hosted-service",
     "create-local": "graph create --node http://localhost:8020/",
     "remove-local": "graph remove --node http://localhost:8020/ beetx-subgraph",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 beetx-subgraph",
