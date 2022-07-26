@@ -17,7 +17,9 @@
     "deploy:fantom-eu": "graph deploy masterchefV2 subgraph.yaml --ipfs  http://eu-node-v2.beets-ftm-node.com:5001 --node  http://eu-node-v2.beets-ftm-node.com:8020/",
     "deploy:fantom-ca": "graph deploy masterchefV2 subgraph.yaml --ipfs http://ca-node-v2.beets-ftm-node.com:5001 --node  http://ca-node-v2.beets-ftm-node.com:8020/",
     "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
-    "prepare:fantom": "mustache config/fantom.json template.yaml > subgraph.yaml"
+    "prepare:goerli": "mustache config/goerli.json template.yaml > subgraph.yaml",
+    "prepare:fantom": "mustache config/fantom.json template.yaml > subgraph.yaml",
+    "deploy:goerli": "graph deploy 0xBriz/dex-goerli subgraph.goerli.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.26.0",
