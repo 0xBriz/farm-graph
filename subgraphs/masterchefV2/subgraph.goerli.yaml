@@ -8,9 +8,9 @@ dataSources:
     name: MasterChefV2
     network: goerli
     source:
-      address: '0xCB381EB1a739F2732eaf4C9c9aEBbD0563964deE'
+      address: '0x99a3Abf91d5eE0e79662eb3D088B449231a0aEed'
       abi: MasterChefV2
-      startBlock: 7295572
+      startBlock: 7365926
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

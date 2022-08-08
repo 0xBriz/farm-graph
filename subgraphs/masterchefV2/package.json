@@ -19,7 +19,7 @@
     "prepare:rinkeby": "mustache config/rinkeby.json template.yaml > subgraph.yaml",
     "prepare:goerli": "mustache config/goerli.json template.yaml > subgraph.yaml",
     "prepare:fantom": "mustache config/fantom.json template.yaml > subgraph.yaml",
-    "deploy:goerli": "graph deploy 0xBriz/dex-goerli subgraph.goerli.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
+    "deploy:goerli": "graph deploy 0xBriz/farm-graph-goerli subgraph.goerli.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.26.0",
